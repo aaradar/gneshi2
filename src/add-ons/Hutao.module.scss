@@ -1,6 +1,7 @@
 /* src/App.css or any other CSS file */
 
-.Hutao {
+.Hutao,
+.Chevreuse {
   display: none;
   position: fixed;
   top: 0;
@@ -16,21 +17,10 @@
     display: block;
   }
 }
-.Chevreuse {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("../../images/chevreuse.jpg"); /* Adjust the path to match the location of the image */
-  background-size: cover;
-  z-index: 9999; /* Set a high z-index to ensure it's on top */
-  animation: fadeOut 1s ease-in-out; /* Apply fade-out animation with a duration of 4 seconds */
 
-  &.Open {
-    display: block;
-  }
+.Chevreuse {
+  background-image: url("../../images/chevreuse.jpg"); /* Adjust the path to match the location of the image */
+  animation: fadeOut 1s ease-in-out; /* Apply fade-out animation with a duration of 4 seconds */
 }
 
 /* Define a fade-out animation */

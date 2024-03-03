@@ -1,15 +1,10 @@
 .App {
   text-align: center;
   position: relative; /* Ensure the container is positioned */
+  //height: 1500px;
 }
 
 .AppHeader {
-  background-color: rgba(
-    1,
-    5,
-    2,
-    0.219
-  ); /* Semi-transparent background color */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
