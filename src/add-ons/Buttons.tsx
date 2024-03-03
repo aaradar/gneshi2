@@ -2,20 +2,21 @@
 
 import { useEffect } from "react";
 import styles from "./Buttons.module.scss";
-import RaidenSound from "./sounds/Raiden.wav"; // Import Raiden.wav
-import OrderSound from "./sounds/Order.wav"; // Import Order.wav
-import XiaoSound from "./sounds/xiao.wav"; // Import Order.wav
-import AyatoSound from "./sounds/pace.wav"; // Import Order.wav
-import WriothesleySound from "./sounds/home.wav"; // Import Order.wav
-import DilucSound from "./sounds/retribution.wav"; // Import Order.wav
-import ChatSound from "./sounds/chat.wav"; // Import chat.wav
+import RaidenSound from "../sounds/Raiden.wav"; // Import Raiden.wav
+import OrderSound from "../sounds/Order.wav"; // Import Order.wav
+import XiaoSound from "../sounds/xiao.wav"; // Import Order.wav
+import AyatoSound from "../sounds/pace.wav"; // Import Order.wav
+import WriothesleySound from "../sounds/home.wav"; // Import Order.wav
+import DilucSound from "../sounds/retribution.wav"; // Import Order.wav
+import ChatSound from "../sounds/chat.wav"; // Import chat.wav
+import WandererSound from "../sounds/Sharp.wav"; // Import chat.wav
 
 export function Buttons() {
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
-      if (event.key === "g" || event.key === "G" || event.key === "1") {
+      if (event.key === "g" || event.key === "G" || event.key === "2") {
         handleButtonClick(OrderSound);
-      } else if (event.key === "e" || event.key === "E" || event.key === "2") {
+      } else if (event.key === "e" || event.key === "E" || event.key === "1") {
         handleButtonClick(RaidenSound);
       } else if (event.key === "x" || event.key === "X" || event.key === "3") {
         handleButtonClick(XiaoSound);
@@ -27,6 +28,8 @@ export function Buttons() {
         handleButtonClick(DilucSound);
       } else if (event.key === "n" || event.key === "N" || event.key === "7") {
         handleButtonClick(ChatSound);
+      } else if (event.key === "w" || event.key === "W" || event.key === "8") {
+        handleButtonClick(WandererSound);
       }
     };
 
@@ -70,11 +73,16 @@ export function Buttons() {
           onClick={() => handleButtonClick(DilucSound)}
         />
       </div>
-      <div
-        className={`${styles.Button} ${styles.Neuv}`}
-        onClick={() => handleButtonClick(ChatSound)}
-      ></div>
-      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div className={styles.ButtonsRow}>
+        <div
+          className={`${styles.Button} ${styles.Neuv}`}
+          onClick={() => handleButtonClick(ChatSound)}
+        />
+        <div
+          className={`${styles.Button} ${styles.Wanderer}`}
+          onClick={() => handleButtonClick(WandererSound)}
+        />
+      </div>
     </div>
   );
 }

@@ -7,10 +7,26 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../Images/scary.jpg"); /* Adjust the path to match the location of the image */
+  background-image: url("../../images/scary.jpg"); /* Adjust the path to match the location of the image */
   background-size: cover;
   z-index: 9999; /* Set a high z-index to ensure it's on top */
   animation: fadeOut 4s ease-in-out; /* Apply fade-out animation with a duration of 4 seconds */
+
+  &.Open {
+    display: block;
+  }
+}
+.Chevreuse {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../images/chevreuse.jpg"); /* Adjust the path to match the location of the image */
+  background-size: cover;
+  z-index: 9999; /* Set a high z-index to ensure it's on top */
+  animation: fadeOut 1s ease-in-out; /* Apply fade-out animation with a duration of 4 seconds */
 
   &.Open {
     display: block;
@@ -22,25 +38,25 @@
   0% {
     opacity: 1; /* Start with full opacity */
   }
-  12.5% {
+  12% {
     opacity: 0.835; /* End with zero opacity */
   }
   25% {
     opacity: 0.75; /* End with zero opacity */
   }
-  37.5% {
+  37% {
     opacity: 0.625; /* End with zero opacity */
   }
   50% {
     opacity: 0.5; /* End with zero opacity */
   }
-  37.5% {
+  63% {
     opacity: 0.375; /* End with zero opacity */
   }
   75% {
     opacity: 0.25; /* End with zero opacity */
   }
-  87.5% {
+  87% {
     opacity: 0.125; /* End with zero opacity */
   }
   100% {

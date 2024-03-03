@@ -1,16 +1,17 @@
 // import { useState } from 'react'
 import styles from "./App.module.scss";
 import { Background } from "./Background";
-import { Buttons } from "./Buttons";
-import { Hutao } from "./Hutao";
+import { Buttons } from "./add-ons/Buttons";
+import { Hutao } from "./add-ons/Hutao";
+import { Chevreuse } from "./add-ons/Chevreuse";
 
 function App() {
   return (
     <div className={styles.App}>
       <header className={styles.AppHeader}>
         <h1>Zhongli Piano</h1>
-        <p>Press 1,2,3,4,5,6, or 7.</p>
-        <p>Scroll down for more!</p>
+        <p>Press 1,2,3,4,5,6,7 or 8.</p>
+        <p>Press HV!</p>
         <Buttons />
         {/* <Button /> Render the Button component */}
       </header>
@@ -18,6 +19,7 @@ function App() {
         <Background />
       </div>
       <Hutao />
+      <Chevreuse />
     </div>
   );
 }

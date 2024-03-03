@@ -12,6 +12,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   position: relative; /* Ensure the container is positioned */
   z-index: 1; /* Set a higher z-index */
 }
@@ -27,26 +28,29 @@
 }
 
 .Button.ElectroSigil {
-  background-image: url("../images/ElectroSigil.jpg"); /* Set background image for ElectroSigil button */
+  background-image: url("../../images/ElectroSigil.jpg"); /* Set background image for ElectroSigil button */
 }
 
 .Button.GeoSigil {
-  background-image: url("../images/GeoSigil.jpg"); /* Set background image for GeoSigil button */
+  background-image: url("../../images/GeoSigil.jpg"); /* Set background image for GeoSigil button */
 }
 .Button.AnemoSigil {
-  background-image: url("../images/AnemoSigil.jpg"); /* Set background image for GeoSigil button */
+  background-image: url("../../images/AnemoSigil.jpg"); /* Set background image for GeoSigil button */
 }
 .Button.HydroSigil {
-  background-image: url("../images/HydroSigil.jpg"); /* Set background image for GeoSigil button */
+  background-image: url("../../images/HydroSigil.jpg"); /* Set background image for GeoSigil button */
 }
 .Button.CryoSigil {
-  background-image: url("../images/CryoSigil.jpg"); /* Set background image for GeoSigil button */
+  background-image: url("../../images/CryoSigil.jpg"); /* Set background image for GeoSigil button */
 }
 .Button.PyroSigil {
-  background-image: url("../images/PyroSigil.jpg"); /* Set background image for GeoSigil button */
+  background-image: url("../../images/PyroSigil.jpg"); /* Set background image for GeoSigil button */
 }
 .Button.Neuv {
-  background-image: url("../images/neuv.jpg"); /* Set background image for GeoSigil button */
+  background-image: url("../../images/neuv.jpg"); /* Set background image for GeoSigil button */
+}
+.Button.Wanderer {
+  background-image: url("../../images/Scarameow.jpg"); /* Set background image for GeoSigil button */
 }
 
 .Button:hover {

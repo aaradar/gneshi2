@@ -1,29 +1,29 @@
 import { useEffect, useRef } from "react";
 
-import OrderSound from "./sounds/sillychurl.wav";
+import ChevreuseSound from "../sounds/crimes.wav";
 import styles from "./Hutao.module.scss";
 
-export function Hutao() {
-  const hutaoDiv = useRef<HTMLDivElement>(null);
+export function Chevreuse() {
+  const chevreuseDiv = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
-      if (!hutaoDiv.current) {
+      if (!chevreuseDiv.current) {
         return;
       }
 
-      if (event.key === "h" || event.key === "H") {
-        const audio = new Audio(OrderSound); // Create an Audio object using the imported audio file
+      if (event.key === "v" || event.key === "V") {
+        const audio = new Audio(ChevreuseSound); // Create an Audio object using the imported audio file
         audio.play(); // Play the sound
 
         // Add a CSS class to the body to display the image using CSS
-        hutaoDiv.current.classList.add(styles.Open);
+        chevreuseDiv.current.classList.add(styles.Open);
 
         // Add event listener to remove the CSS class when the animation ends
-        hutaoDiv.current.addEventListener(
+        chevreuseDiv.current.addEventListener(
           "animationend",
           () => {
-            hutaoDiv.current?.classList.remove(styles.Open);
+            chevreuseDiv.current?.classList.remove(styles.Open);
           },
           { once: true }
         ); // { once: true } ensures that the event listener is removed after it's triggered once
@@ -37,5 +37,5 @@ export function Hutao() {
     };
   }, []);
 
-  return <div ref={hutaoDiv} className={styles.Hutao} />;
+  return <div ref={chevreuseDiv} className={styles.Chevreuse} />;
 }
