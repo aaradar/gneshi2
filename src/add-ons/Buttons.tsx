@@ -20,33 +20,33 @@ import KaeyaSound from "../sounds/frostbite.wav"; // Import chat.wav
 export function Buttons() {
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
-      if (event.key === "2" || event.key === "@") {
+      if (event.key === "w" || event.key === "W") {
         handleButtonClick(OrderSound);
-      } else if (event.key === "1" || event.key === "!") {
-        handleButtonClick(RaidenSound);
-      } else if (event.key === "3" || event.key === "#") {
-        handleButtonClick(XiaoSound);
-      } else if (event.key === "4" || event.key === "$") {
-        handleButtonClick(AyatoSound);
-      } else if (event.key === "5" || event.key === "%") {
-        handleButtonClick(WriothesleySound);
-      } else if (event.key === "6" || event.key === "^") {
-        handleButtonClick(RagnvindrSound);
-      } else if (event.key === "7" || event.key === "&") {
-        handleButtonClick(ChatSound);
-      } else if (event.key === "8" || event.key === "*") {
-        handleButtonClick(WandererSound);
-      } else if (event.key === "9" || event.key === "(") {
-        handleButtonClick(AyakaSound);
-      } else if (event.key === "0" || event.key === ")") {
-        handleButtonClick(JeanSound);
       } else if (event.key === "q" || event.key === "Q") {
-        handleButtonClick(SucroseSound);
-      } else if (event.key === "w" || event.key === "W") {
-        handleButtonClick(ShenheSound);
+        handleButtonClick(RaidenSound);
       } else if (event.key === "e" || event.key === "E") {
-        handleButtonClick(AratakiSound);
+        handleButtonClick(XiaoSound);
       } else if (event.key === "r" || event.key === "R") {
+        handleButtonClick(AyatoSound);
+      } else if (event.key === "t" || event.key === "T") {
+        handleButtonClick(WriothesleySound);
+      } else if (event.key === "y" || event.key === "Y") {
+        handleButtonClick(RagnvindrSound);
+      } else if (event.key === "u" || event.key === "U") {
+        handleButtonClick(ChatSound);
+      } else if (event.key === "i" || event.key === "I") {
+        handleButtonClick(WandererSound);
+      } else if (event.key === "o" || event.key === "O") {
+        handleButtonClick(AyakaSound);
+      } else if (event.key === "p" || event.key === "P") {
+        handleButtonClick(JeanSound);
+      } else if (event.key === "a" || event.key === "A") {
+        handleButtonClick(SucroseSound);
+      } else if (event.key === "s" || event.key === "S") {
+        handleButtonClick(ShenheSound);
+      } else if (event.key === "d" || event.key === "D") {
+        handleButtonClick(AratakiSound);
+      } else if (event.key === "f" || event.key === "F") {
         handleButtonClick(KaeyaSound);
       }
     };
