@@ -1,0 +1,54 @@
+/* src/Side Pages/Button.css */
+
+.ButtonsColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ButtonsRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensure the container is positioned */
+  z-index: 1; /* Set a higher z-index */
+}
+
+.Button {
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; /* Make it circular */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add shadow */
+}
+
+.Button.ElectroSigil {
+  background-image: url("../images/ElectroSigil.jpg"); /* Set background image for ElectroSigil button */
+}
+
+.Button.GeoSigil {
+  background-image: url("../images/GeoSigil.jpg"); /* Set background image for GeoSigil button */
+}
+.Button.AnemoSigil {
+  background-image: url("../images/AnemoSigil.jpg"); /* Set background image for GeoSigil button */
+}
+.Button.HydroSigil {
+  background-image: url("../images/HydroSigil.jpg"); /* Set background image for GeoSigil button */
+}
+.Button.CryoSigil {
+  background-image: url("../images/CryoSigil.jpg"); /* Set background image for GeoSigil button */
+}
+.Button.PyroSigil {
+  background-image: url("../images/PyroSigil.jpg"); /* Set background image for GeoSigil button */
+}
+.Button.Neuv {
+  background-image: url("../images/neuv.jpg"); /* Set background image for GeoSigil button */
+}
+
+.Button:hover {
+  transform: scale(1.1); /* Add hover effect */
+}
