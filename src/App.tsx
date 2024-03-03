@@ -2,7 +2,7 @@
 import styles from "./App.module.scss";
 import { Background } from "./Background";
 import { Buttons } from "./Buttons";
-import "./ScaryHandler";
+import { Hutao } from "./Hutao";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       <div>
         <Background />
       </div>
+      <Hutao />
     </div>
   );
 }
