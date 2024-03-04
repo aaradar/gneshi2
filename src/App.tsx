@@ -13,12 +13,11 @@ function App() {
       <NavBar />
       <div className={styles.App}>
         <header className={styles.AppHeader}>
-          <h1>Swagli Piano</h1>
+          <h1>Zhongli Piano</h1>
           <SearchBar />
           <p>ZhongliType</p>
           <Sentence />
           <Buttons />
-          {/* <Button /> Render the Button component */}
         </header>
         <div>
           <Background />

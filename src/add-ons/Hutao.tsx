@@ -38,7 +38,7 @@ export function Hutao() {
         playSoundAndShowImage(hutaoDiv.current, OrderSound);
       }
 
-      if (event.key === "v" || event.key === "V") {
+      if (event.key === "," || event.key === ".") {
         if (!chevreuseDiv.current) {
           return;
         }

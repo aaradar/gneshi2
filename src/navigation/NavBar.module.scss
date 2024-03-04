@@ -22,3 +22,25 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+// NavBar.module.scss
+
+.button {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  border: 2px solid black; /* Black border */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  text-decoration: none;
+  border-radius: 5px; /* Border radius */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  margin: 0 5px; /* Add slight separation to the sides */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+.link {
+  text-decoration: none;
+}

@@ -5,11 +5,15 @@ function NavBar() {
   return (
     <div className={styles.NavBar}>
       <div className={styles.container}>
-        <button>
-          <Link to="/Mondstadt">Mondstadt</Link>
+        <button className={styles.button}>
+          <Link className={styles.link} to="/Mondstadt">
+            Mondstadt
+          </Link>
         </button>
-        <button>
-          <Link to="/">Zhongli Shrine</Link>
+        <button className={styles.button}>
+          <Link className={styles.link} to="/">
+            Zhongli Shrine
+          </Link>
         </button>
       </div>
     </div>

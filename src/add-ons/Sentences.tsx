@@ -6,10 +6,14 @@ const sentences = [
   "Today, of course, Wolvendom is presided over by the Great Wolf King of the North, and the ominous atmosphere that emanates from inside the forest is sufficient to deter most sober-headed visitors from approaching the area.",
   "To be, or not to be, that is the question.",
   'Thus the people of Sangonomiya named their island Watatsumi, meaning "god of the sea," for the Great Serpent was their god.',
+  "A consultant of the Wangsheng Funeral Parlor, he is later revealed to be the Geo Archon, Morax, who has decided to experience the world from the perspective of a mortal.",
+  "This is an age of gods and monsters. I wish not for dominion; yet I cannot watch the common folk suffer. ",
 ];
 
 function Sentence() {
-  const [randomSentence, setRandomSentence] = useState("");
+  const [randomSentence, setRandomSentence] = useState(
+    sentences[Math.floor(Math.random() * sentences.length)]
+  );
 
   useEffect(() => {
     const intervalId = setInterval(() => {
