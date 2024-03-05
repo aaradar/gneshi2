@@ -2,7 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
-import Mondstadt from "./Mondstadt.tsx";
+import Mondstadt from "./regions/mondstadt/Mondstadt.tsx";
+import Liyue from "./regions/liyue/Liyue.tsx";
+import Inazuma from "./regions/inazuma/Inazuma.tsx";
+import Sumeru from "./regions/sumeru/Sumeru.tsx";
+import Fontaine from "./regions/fontaine/Fontaine.tsx";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +16,22 @@ const router = createBrowserRouter([
   {
     path: "/Mondstadt",
     element: <Mondstadt />,
+  },
+  {
+    path: "/Liyue",
+    element: <Liyue />,
+  },
+  {
+    path: "/Inazuma",
+    element: <Inazuma />,
+  },
+  {
+    path: "/Sumeru",
+    element: <Sumeru />,
+  },
+  {
+    path: "/Fontaine",
+    element: <Fontaine />,
   },
 ]);
 
