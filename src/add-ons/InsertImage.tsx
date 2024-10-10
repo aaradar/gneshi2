@@ -57,7 +57,7 @@ const deleteUserById = async (userId: string): Promise<void> => {
 //   };
 
 function getRandomNumber(min: number, max: number): number {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.random() * (max - min + 1) + min;
 }
 
 export function InsertImage() {
@@ -78,7 +78,7 @@ export function InsertImage() {
     const errors = [];
     if (name.length === 0 && email.length === 0) {
       // they didn't fill out one or both of the fields
-      errors.push("YOU HAVE BROKEN EVERY CONTRACT POSSIBLE");
+      errors.push("YOU HAVE BROKEN EVERY CONTRACT POSSIBLE CONTRACT");
     }
     if (name.length === 0) {
       errors.push("YOU HAVE BROKEN THE NAME CONTRACT");
@@ -92,7 +92,9 @@ export function InsertImage() {
       );
     }
     if (!nameRegex.test(name)) {
-      errors.push("YOU HAVE BROKEN THE OUR NAMES ONLY HAVE LETTERS AND SPACES");
+      errors.push(
+        "YOU HAVE BROKEN THE OUR NAMES ONLY HAVE LETTERS AND SPACES CONTRACT"
+      );
     }
 
     if (errors.length !== 0) {
@@ -124,7 +126,7 @@ export function InsertImage() {
   }, []);
 
   useEffect(() => {
-    setCardScale(getRandomNumber(0.1, 1.5));
+    setCardScale(getRandomNumber(0.9, 1.1));
 
     setDidTryToAddWithoutTyping([]);
   }, [name, email]);
