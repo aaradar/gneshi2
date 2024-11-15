@@ -4,7 +4,7 @@ import styles from "./SearchBar.module.scss"; // Import the CSS module
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const handleKeyPress = (event) => {
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
       // Clear the input
       setSearchTerm("");

@@ -1,14 +1,15 @@
 //import { useState } from "react";
 import { InazumaBackground } from "./InazumaBackground";
 import NavBar from "../../navigation/NavBar";
+import styles from "./Inazuma.module.scss";
 
 function Inazuma() {
   return (
     <div>
       <NavBar />
-      <div>
-        <header>
-          <h1>Zhongli Piano</h1>
+      <div className={styles.Inazuma}>
+        <header className={styles.InazumaHeader}>
+          <h1>Who?</h1>
         </header>
         <div>
           <InazumaBackground />

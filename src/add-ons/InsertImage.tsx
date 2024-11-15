@@ -57,8 +57,8 @@ const deleteUserById = async (userId: string): Promise<void> => {
 //   };
 
 function getRandomNumber(min: number, max: number): number {
-  //return Math.random() * (max - min + 1) + min;
-  return 1;
+  return Math.random() * (max - min + 1) + min; // (seizure) random size change
+  //return 1; //default size
 }
 
 export function InsertImage() {
@@ -163,7 +163,7 @@ export function InsertImage() {
       />
 
       <button className={styles.ZhongliShirtButton} onClick={addCurrentUser}>
-        add user
+        Join The Shrine
       </button>
 
       {didTryToAddWithoutTyping.length !== 0 &&
