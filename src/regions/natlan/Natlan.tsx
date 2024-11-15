@@ -1,21 +1,21 @@
 //import { useState } from "react";
-import { SumeruBackground } from "./SumeruBackground";
+import { NatlanBackground } from "./NatlanBackground";
 import NavBar from "../../navigation/NavBar";
 
-function Sumeru() {
+function Natlan() {
   return (
     <div>
       <NavBar />
       <div>
         <header>
-          <h1>Zhongli Piano</h1>
+          <h1>Natlan</h1>
         </header>
         <div>
-          <SumeruBackground />
+          <NatlanBackground />
         </div>
       </div>
     </div>
   );
 }
 
-export default Sumeru;
+export default Natlan;

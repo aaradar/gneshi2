@@ -57,7 +57,8 @@ const deleteUserById = async (userId: string): Promise<void> => {
 //   };
 
 function getRandomNumber(min: number, max: number): number {
-  return Math.random() * (max - min + 1) + min;
+  //return Math.random() * (max - min + 1) + min;
+  return 1;
 }
 
 export function InsertImage() {

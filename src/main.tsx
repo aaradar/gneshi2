@@ -7,6 +7,7 @@ import Liyue from "./regions/liyue/Liyue.tsx";
 import Inazuma from "./regions/inazuma/Inazuma.tsx";
 import Sumeru from "./regions/sumeru/Sumeru.tsx";
 import Fontaine from "./regions/fontaine/Fontaine.tsx";
+import Natlan from "./regions/natlan/Natlan.tsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/Fontaine",
     element: <Fontaine />,
+  },
+  {
+    path: "/Natlan",
+    element: <Natlan />,
   },
 ]);
 

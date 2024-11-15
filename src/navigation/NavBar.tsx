@@ -35,6 +35,11 @@ function NavBar() {
             Fontaine
           </Link>
         </button>
+        <button className={styles.button}>
+          <Link className={styles.link} to="/Natlan">
+            Natlan
+          </Link>
+        </button>
       </div>
     </div>
   );

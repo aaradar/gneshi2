@@ -1,5 +1,5 @@
 //import { useState } from "react";
-import { Background } from "../../Background";
+import { FontaineBackground } from "./FontaineBackground";
 import NavBar from "../../navigation/NavBar";
 
 function Fontaine() {
@@ -11,7 +11,7 @@ function Fontaine() {
           <h1>Zhongli Piano</h1>
         </header>
         <div>
-          <Background />
+          <FontaineBackground />
         </div>
       </div>
     </div>

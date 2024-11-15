@@ -1,5 +1,5 @@
 //import { useState } from "react";
-import { Background } from "../../Background";
+import { LiyueBackground } from "./LiyueBackground";
 import NavBar from "../../navigation/NavBar";
 import styles from "./Liyue.module.scss";
 import { InsertImage } from "../../add-ons/InsertImage";
@@ -9,11 +9,11 @@ function Liyue() {
       <NavBar />
       <div className={styles.Liyue}>
         <header className={styles.LiyueHeader}>
-          <h1 >I Will Have Order</h1>
+          <h1>I Will Have Order</h1>
           <InsertImage></InsertImage>
         </header>
         <div>
-          <Background />
+          <LiyueBackground />
         </div>
       </div>
     </div>

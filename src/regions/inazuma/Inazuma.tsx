@@ -1,5 +1,5 @@
 //import { useState } from "react";
-import { Background } from "../../Background";
+import { InazumaBackground } from "./InazumaBackground";
 import NavBar from "../../navigation/NavBar";
 
 function Inazuma() {
@@ -11,7 +11,7 @@ function Inazuma() {
           <h1>Zhongli Piano</h1>
         </header>
         <div>
-          <Background />
+          <InazumaBackground />
         </div>
       </div>
     </div>

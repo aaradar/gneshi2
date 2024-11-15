@@ -5,12 +5,13 @@
   width: 100%;
   height: 100%;
   z-index: 0; /* Set a lower z-index */
-  background-image: url("../images/swagli.jpg"); /* Adjust the path accordingly */
+  background-image: url("../images/zhongligoated.png"); /* Adjust the path accordingly */
   background-size: cover;
   background-position: center;
 
-  transform: scale(1.5);
+  transform: scale(1.0);
 }
+
 .BackgroundMond {
   position: fixed;
   top: 0;
@@ -22,5 +23,75 @@
   background-size: cover;
   background-position: center;
 
-  transform: scale(1.5);
+  transform: scale(1.2);
+}
+
+.BackgroundLiyue {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Set a lower z-index */
+  background-image: url("../images/liyue.png"); /* Adjust the path accordingly */
+  background-size: cover;
+  background-position: center;
+
+  transform: scale(1.0);
+}
+
+.BackgroundIna {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Set a lower z-index */
+  background-image: url("../images/inazuma.png"); /* Adjust the path accordingly */
+  background-size: cover;
+  background-position: center;
+
+  transform: scale(1.0);
+}
+
+.BackgroundSum {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Set a lower z-index */
+  background-image: url("../images/sumeru.png"); /* Adjust the path accordingly */
+  background-size: cover;
+  background-position: center;
+
+  transform: scale(1.0);
+}
+
+.BackgroundFon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Set a lower z-index */
+  background-image: url("../images/fontaine.png"); /* Adjust the path accordingly */
+  background-size: cover;
+  background-position: center;
+
+  transform: scale(1.0);
+}
+
+.BackgroundNat {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Set a lower z-index */
+  background-image: url("../images/natlan.png"); /* Adjust the path accordingly */
+  background-size: cover;
+  background-position: center;
+
+  transform: scale(1.0);
 }
