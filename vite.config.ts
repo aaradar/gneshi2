@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import Pages from "vite-plugin-pages";
 
-// Replace `<your-repo-name>` with your actual repository name
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: "/gneshi2/", // replace with the path where your app is deployed
-  plugins: [react()],
+  plugins: [react(), Pages()],
+  base: process.env.NODE_ENV === "production" ? "/gneshi/" : "/",
 });
